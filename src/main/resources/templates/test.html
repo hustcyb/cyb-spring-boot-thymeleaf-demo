@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+</head>
+<body>
+    <div class="form-group">
+    <label>Gender:</label>
+		<select>
+		   <option th:each="gender : ${T(com.cyb.spring.boot.thymeleaf.demo.enumeration.Gender).values()}"
+		          th:value="${gender.value}" 
+		          th:text="${gender.name}">
+		   </option>
+		</select>
+    </select>
+</div>
+</body>
+</html>
